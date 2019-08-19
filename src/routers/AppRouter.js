@@ -1,7 +1,6 @@
 import React from 'react';
 // Link is used for client side routing and not server side
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
-
 // BrowserRouter can only have one child (so only switch or div...etc.)
 const AppRouter = () => (
     <BrowserRouter>
