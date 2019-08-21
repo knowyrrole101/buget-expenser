@@ -24,3 +24,5 @@ yarn add react-modal@2.2.2
 yarn add style-loader@0.18.2 css-loader@0.28.4
 # SCSS handling in Webpack
 yarn add sass-loader@6.0.6 node-sass@4.5.3
+# Redux
+yarn add redux@3.7.2
