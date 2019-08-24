@@ -103,13 +103,7 @@ const filtersReducer = (state=filtersReducerDefaultState, action) => {
   }
 };
 
-// Combined Reducers
-const store = createStore(
-  combineReducers({
-    expenses: expensesReducer,
-    filters: filtersReducer
-  })
-);
+
 
 // Get visible expenses
 const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
