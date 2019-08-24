@@ -3,26 +3,37 @@ OR
 npm install -g babel-cli@6.24.1
 yarn init
 yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2
+
 # Compile jsx to es5 code
 babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 ########## WEBPACK ###########
 # yarn run custom scripts
 # Create webpack.config.js
-
 npm install validator@8.0.0
+
 yarn add react@16.0.0 react-dom@16.0.0
+
 # To load and compile babel in webpack
 yarn add babel-core@6.25.0
 yarn add babel-loader@7.1.1
+
 # Also maybe these: 
 yarn add babel-preset-env@1.7.0
 yarn add babel-preset-react@6.24.1
+
 # Add a custom component (react modal in this case)
 yarn add react-modal@2.2.2
+
 # CSS Loader in Webpack
 yarn add style-loader@0.18.2 css-loader@0.28.4
+
 # SCSS handling in Webpack
 yarn add sass-loader@6.0.6 node-sass@4.5.3
+
 # Redux
 yarn add redux@3.7.2
+
+# Babel plugin for ES6 Object Spread operator
+yarn add babel-plugin-transform-object-rest-spread@6.23.0
+
