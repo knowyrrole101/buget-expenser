@@ -23,12 +23,13 @@ const store = configureStore();
 store.dispatch(addExpense({ description: 'water bill', amount: 2500, createdAt: 100 }));
 store.dispatch(addExpense({ description: 'gas bill', amount: 6000, createdAt: 200 }));
 store.dispatch(addExpense({ description: 'tickets', amount: 77000, createdAt: -500 }));
+store.dispatch(addExpense({ description: 'rent', amount: 100950, createdAt: 100 }));
 store.dispatch(setFilterText('bill'));
 // store.dispatch(setFilterText('water'));
 
-setTimeout(() => {
-    store.dispatch(setFilterText('gas'));
-}, 3000);
+// setTimeout(() => {
+//     store.dispatch(setFilterText('gas'));
+// }, 3000);
 
 const state = store.getState();
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
